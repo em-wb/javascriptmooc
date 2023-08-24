@@ -1,5 +1,3 @@
-/* #00A896  #FF6B6B #002442 */ 
-
 body {
     font-size: 15px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -14,6 +12,7 @@ body {
     height: 50px;
     align-items: center;
     padding: 25px 120px 0 120px;
+    margin-bottom: 50px;
 }
 
 #logo {
@@ -36,7 +35,7 @@ button, .nav {
     transition: 0.3s;   
 }
 
-button:hover, input[type=submit]:hover, .nav:hover {
+button:hover, input[type=submit]:hover, .nav:hover, .option:hover {
     transform: scale(1.1);
     opacity: 0.8;
 }
@@ -56,13 +55,6 @@ a:link, a:visited, a:active {
     display: flex;   
 }
 
-/*add java*/
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 h1 {
     font-size: 50px;
 }
@@ -70,7 +62,6 @@ h1 {
 .header {
     display:flex;
     flex-direction: column;
-    /*border: black solid 2px;*/
     min-height: 350px; 
     justify-content: center;     
 }
@@ -83,23 +74,22 @@ h1 {
 #intro-text {
     text-align: start;
     flex-wrap: wrap;
-    margin: 30px 30px 50px;
+    margin: 0 30px 50px;
     margin-right:120px;
 }
 
 
 #intro-img {
     height: 300px; 
-    margin:50px 90px 50px 120px;
+    margin:0 90px 50px 120px;
         
 }
 
-#container-two, #container-five {
+.container-two, #container-five {
     background-color: #FF6B6B;
     text-align: center;
     color: white;
     padding: 50px 120px 50px 120px;
-    margin-bottom: 50px;
 }
 
 .main-button, input[type=submit] {
@@ -123,13 +113,11 @@ input[type=text] {
     justify-content: space-around;
     padding: 0px 90px;
     margin-bottom: 50px;
-    
-
+    margin-top:50px;
 }
 
 .blog-item {
     padding: 0 60px;
-    /*border: black solid 2px;*/
     width: 300px;
     transition: 0.3s;
     cursor: pointer;
@@ -139,7 +127,6 @@ input[type=text] {
     opacity: 0.8;
     transform: scale(1.05);
 }
-
 
 .blog-image {
     width: 250px;
@@ -191,4 +178,56 @@ input[type=text] {
 }
 
 
-   
+/*java css*/
+#game-container {
+    width: 100%;
+    height: 400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}  
+
+.questionBox {
+    height:100px;
+    width:100%;
+}
+
+.questions {
+    text-align:center;
+}
+
+.optionsContainer {
+    display: flex;
+    width: 100%;
+    height:300px;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.option {
+    display: flex;
+    height: 250px;
+    flex-wrap: wrap;
+    font-size: 125px;
+    justify-content: space-around;
+    align-content: center;
+    cursor: pointer;
+}
+
+.result {
+    font-size: 60px;
+    align-self: center;
+    width: 100%;
+    color:#002442; 
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+
+.hidden {
+    display: none;
+}
