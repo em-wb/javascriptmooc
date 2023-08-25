@@ -16,8 +16,6 @@ const gameContainer = document.querySelector('#game-container');
 
 const questionBox = document.createElement('div');
 questionBox.classList.add('questionBox');
-questionBox.style.height = '100px';
-questionBox.style.width = '100%';
 gameContainer.append(questionBox);
 
 const questions = document.createElement('h1');
@@ -121,10 +119,10 @@ displayShuffle.classList.add('hidden');
 displayShuffle.textContent = ("")
 optionsContainer.append(displayShuffle);
 
-// Create randomiser to give a result at the end of gameplay based on the options chosen by the user.
+// Create arrays. Select random option based on the options chosen by the user.
 
 function getShuffle332() {
-    let demoActivityArray322 = ['Write your own PUB QUIZ', 'Play a good old game of CHARADES', 'Play a free MURDER MYSTERY at whodunitmysteries.com', 'Have a dance a tutorial from STEEZY on Youtube']
+    let demoActivityArray322 = ['Write your own PUB QUIZ', 'Play a good old game of CHARADES', 'Play a free MURDER MYSTERY at whodunitmysteries.com', 'Have a dance-off after a tutorial from STEEZY on Youtube']
     let shufflePick1 = demoActivityArray322[Math.floor(Math.random() * demoActivityArray322.length)];
     return shufflePick1;
   };
