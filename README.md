@@ -1,8 +1,8 @@
-# javamooc
+# JavaScriptmooc
 
-Javascript challenge with Girls Code First
+JavaScript challenge with Girls Code First
 
 - The project centered around the the cost of living crisis.
-    - Demonstrating foundation level javascript.
+    - Demonstrating foundation level JavaScript.
     - A complete web page/app was not required.
 
